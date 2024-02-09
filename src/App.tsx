@@ -74,59 +74,6 @@ export const App: FC = () => {
             >
               <div className="col-lg-3 col-6">
                 <div className="header-left flex flex-align-c">
-                  <div className="canvas-menu">
-                    <div className="icon">
-                      <a href="#">
-                        <svg
-                          width="30px"
-                          height="14px"
-                          viewBox="0 0 30 14"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlnsXlink="http://www.w3.org/1999/xlink"
-                        >
-                          <g
-                            stroke="none"
-                            strokeWidth="1"
-                            fill="none"
-                            fillRule="evenodd"
-                          >
-                            <g
-                              transform="translate(-50.000000, -33.000000)"
-                              fill="#111111"
-                            >
-                              <g
-                                id="off-menu"
-                                transform="translate(50.000000, 28.000000)"
-                              >
-                                <g
-                                  id="icon-menu"
-                                  transform="translate(0.000000, 5.000000)"
-                                >
-                                  <rect
-                                    id="Rectangle-1"
-                                    x="0"
-                                    y="0"
-                                    width="30"
-                                    height="3"
-                                    rx="1.5"
-                                  ></rect>
-                                  <rect
-                                    id="Rectangle-2"
-                                    x="0"
-                                    y="11"
-                                    width="20"
-                                    height="3"
-                                    rx="1.5"
-                                  ></rect>
-                                </g>
-                              </g>
-                            </g>
-                          </g>
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
                   <div className="logo">
                     <a
                       title="Saturn"
@@ -152,8 +99,9 @@ export const App: FC = () => {
                     href={formbricksLink}
                     target="_blank"
                     className="button fullfield"
+                    style={{ display: "flex", alignItems: "center" }}
                   >
-                    <span>Get Early Access</span>
+                    <span style={{ flexShrink: "0" }}>Get Early Access</span>
                   </a>
                 </div>
               </div>
@@ -164,9 +112,9 @@ export const App: FC = () => {
 
         {/* BEGIN SITE MAIN  */}
         <main id="main" className="site-main">
-          <div className="site-content pt0 pb0">
+          <div className="main-container site-content pt0 pb0">
             <section
-              className="section background-cover-right opt120 spdb"
+              className="main-section section background-cover-right opt120 spdb"
               style={{
                 height: "100vh",
                 display: "flex",

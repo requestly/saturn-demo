@@ -36,3 +36,28 @@ body {
   font-size: 18px;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+  a,
+  button {
+    font-size: 14px !important;
+  }
+
+  .heading-title.size-xl {
+    font-size: 40px !important;
+  }
+
+  .user-selection-container .header {
+    font-size: 18px;
+  }
+
+  .user-selection-container .radio-input label {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-container > .main-section {
+    padding-top: 300px !important;
+  }
+}
