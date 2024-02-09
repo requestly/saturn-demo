@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/requestly.github.io/saturn-demo/static/css/main.2a0d1c76.css",
-    "main.js": "/requestly.github.io/saturn-demo/static/js/main.e1b5db6a.js",
-    "index.html": "/requestly.github.io/saturn-demo/index.html",
-    "main.2a0d1c76.css.map": "/requestly.github.io/saturn-demo/static/css/main.2a0d1c76.css.map",
-    "main.e1b5db6a.js.map": "/requestly.github.io/saturn-demo/static/js/main.e1b5db6a.js.map"
+    "main.css": "/saturn-demo/static/css/main.2a0d1c76.css",
+    "main.js": "/saturn-demo/static/js/main.e1b5db6a.js",
+    "index.html": "/saturn-demo/index.html",
+    "main.2a0d1c76.css.map": "/saturn-demo/static/css/main.2a0d1c76.css.map",
+    "main.e1b5db6a.js.map": "/saturn-demo/static/js/main.e1b5db6a.js.map"
   },
   "entrypoints": [
     "static/css/main.2a0d1c76.css",
