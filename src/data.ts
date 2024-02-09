@@ -1,9 +1,14 @@
 export const personalUsers = [
-  { uid: "admin-1234567890", email: "john.doe@gmail.com", name: "John Doe" },
   {
     uid: "admin-2345678901",
     email: "jane.smith@gmail.com",
     name: "Jane Smith",
+  },
+  { uid: "admin-1234567890", email: "john.doe@gmail.com", name: "John Doe" },
+  {
+    uid: "admin-4567890123",
+    email: "emily.wilson@gmail.com",
+    name: "Emily Wilson",
   },
   {
     uid: "admin-3456789012",
@@ -11,9 +16,9 @@ export const personalUsers = [
     name: "Michael Johnson",
   },
   {
-    uid: "admin-4567890123",
-    email: "emily.wilson@gmail.com",
-    name: "Emily Wilson",
+    uid: "admin-6789012345",
+    email: "sarah.brown@gmail.com",
+    name: "Sarah Brown",
   },
   {
     uid: "admin-5678901234",
@@ -21,9 +26,9 @@ export const personalUsers = [
     name: "David Miller",
   },
   {
-    uid: "admin-6789012345",
-    email: "sarah.brown@gmail.com",
-    name: "Sarah Brown",
+    uid: "admin-8901234567",
+    email: "lisa.thomas@gmail.com",
+    name: "Lisa Thomas",
   },
   {
     uid: "admin-7890123456",
@@ -31,19 +36,14 @@ export const personalUsers = [
     name: "Kevin Anderson",
   },
   {
-    uid: "admin-8901234567",
-    email: "lisa.thomas@gmail.com",
-    name: "Lisa Thomas",
+    uid: "admin-0123456789",
+    email: "natalie.clark@gmail.com",
+    name: "Natalie Clark",
   },
   {
     uid: "admin-9012345678",
     email: "ryan.garcia@gmail.com",
     name: "Ryan Garcia",
-  },
-  {
-    uid: "admin-0123456789",
-    email: "natalie.clark@gmail.com",
-    name: "Natalie Clark",
   },
 ];
 

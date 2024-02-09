@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from "react";
+import { FC, useEffect, useMemo, useState } from "react";
 import { businessUsers, personalUsers } from "./data";
 import { saturnIntegration } from "./integration";
 import "./style.css";
@@ -16,13 +16,12 @@ const getRandomUserIndex = () => {
 
 export const App: FC = () => {
   const [userTypeToLoad, setUserTypeToLoad] = useState<UserType>("anonymous");
-  const [userIndex, setUserIndex] = useState(0);
+  const userIndex = useMemo(() => getRandomUserIndex(), []);
 
   useEffect(() => {
-    const { userType = "personal", index = 0 } =
+    const { userType = "personal" } =
       JSON.parse(localStorage.getItem("saturn_demo_user")) ?? {};
 
-    setUserIndex(index);
     setUserTypeToLoad(userType);
   }, []);
 
@@ -47,14 +46,9 @@ export const App: FC = () => {
 
   const handleOnChange = (e) => {
     const userType = e?.target?.value as UserType;
-    const index = getRandomUserIndex();
 
-    localStorage.setItem(
-      "saturn_demo_user",
-      JSON.stringify({ userType, index })
-    );
+    localStorage.setItem("saturn_demo_user", JSON.stringify({ userType }));
 
-    setUserIndex(index);
     setUserTypeToLoad(userType);
   };
 
@@ -207,7 +201,7 @@ export const App: FC = () => {
                           />
 
                           <label htmlFor="personal">
-                            Normal user (Personal email)
+                            {personalUsers[userIndex]?.email}
                           </label>
                         </div>
 
@@ -222,7 +216,7 @@ export const App: FC = () => {
                           />
 
                           <label htmlFor="business">
-                            Business user (Business email)
+                            {businessUsers[userIndex]?.email}
                           </label>
                         </div>
 
