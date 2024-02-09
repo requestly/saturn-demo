@@ -63,6 +63,7 @@ export const App: FC = () => {
       <div id="wrapper">
         {/* BEGIN SITE HEADER */}
         <header id="header" className="site-header is-transparent">
+          <h1>test</h1>
           <div className="container-fluid">
             <div
               style={{
