@@ -148,22 +148,13 @@ export const App: FC = () => {
 
               <div className="col-lg-3 col-6">
                 <div className="header-right flex flex-align-c flex-content-e">
-                  {/* <div className="customer">
-                    <a href="#">
-                      <i className="las la-user-circle"></i>
-                      <span>Log In</span>
-                    </a>
-                  </div> */}
-                  <div className="buttons">
-                    <a
-                      href={formbricksLink}
-                      target="_blank"
-                      className="button fullfield"
-                    >
-                      <i className="las la-headset"></i>
-                      <span>Get Early Access</span>
-                    </a>
-                  </div>
+                  <a
+                    href={formbricksLink}
+                    target="_blank"
+                    className="button fullfield"
+                  >
+                    <span>Get Early Access</span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -177,9 +168,14 @@ export const App: FC = () => {
             <section
               className="section background-cover-right opt120 spdb"
               style={{
+                height: "100vh",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
                 paddingTop: "200px",
                 paddingBottom: "200px",
                 backgroundImage: `url("https://salahtml.uxper.co/assets/images/hcs-02.png")`,
+                backgroundSize: "cover",
               }}
             >
               <div className="container">
