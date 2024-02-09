@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/saturn-demo/static/css/main.2a0d1c76.css",
+    "main.js": "/saturn-demo/static/js/main.9c4843bb.js",
+    "index.html": "/saturn-demo/index.html",
+    "main.2a0d1c76.css.map": "/saturn-demo/static/css/main.2a0d1c76.css.map",
+    "main.9c4843bb.js.map": "/saturn-demo/static/js/main.9c4843bb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a0d1c76.css",
+    "static/js/main.9c4843bb.js"
+  ]
+}
