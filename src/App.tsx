@@ -127,20 +127,48 @@ export const App: FC = () => {
               }}
             >
               <div className="container">
-                <div className="row flex-align-c">
-                  <div style={{ marginBottom: "3rem" }} className="col-lg-6">
-                    <div className="heading mb32">
-                      <h2 className="heading-title size-xl">
-                        Provide better B2B <br />
-                        support with{" "}
-                        <span className="color-navy no-underline">Saturn</span>
-                      </h2>
-                      <div className="heading-desc">This is a demo app.</div>
-                    </div>
-                    <div className="button-wrap mt32">
+                <div
+                  style={{
+                    marginBottom: "3rem",
+                    marginTop: "100px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    flexDirection: "column",
+                    gap: "1rem",
+                  }}
+                >
+                  <div
+                    style={{
+                      width: "100%",
+                      marginLeft: "0",
+                      marginRight: "0",
+                    }}
+                    className="heading mb32"
+                  >
+                    <h2
+                      style={{ width: "100%", textAlign: "center" }}
+                      className="heading-title size-xl"
+                    >
+                      Provide better B2B <br />
+                      support with{" "}
+                      <span className="color-navy no-underline">Saturn</span>
+                    </h2>
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      gap: "1rem",
+                    }}
+                  >
+                    <div className="heading-desc">This is a demo app.</div>
+
+                    <div className="button-wrap">
                       <a
                         title="Know more"
-                        className="button fullfield xs-mb10"
+                        className="button fullfield"
                         target="_blank"
                         href={saturnLandingPageLink}
                       >
@@ -148,7 +176,14 @@ export const App: FC = () => {
                       </a>
                     </div>
                   </div>
-
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
                   <div className="col-lg-6">
                     {/* here */}
                     <div
